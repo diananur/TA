@@ -29,10 +29,6 @@ import javafx.stage.Stage;
 import javax.swing.JOptionPane;
 
 
-/**
- *
- * @author Lenovo
- */
 public class FXMLDocumentController implements Initializable {
     public String usernames, passwords;
     
