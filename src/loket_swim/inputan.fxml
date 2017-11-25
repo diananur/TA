@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="447.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loket_swim.InputanController">
+   <children>
+      <Label layoutX="40.0" layoutY="203.0" prefHeight="23.0" prefWidth="38.0" text="Usia">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="267.0" text="Paket">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="pak" layoutX="106.0" layoutY="262.0" prefHeight="31.0" prefWidth="138.0" />
+      <JFXTextArea fx:id="AKHIR" layoutX="328.0" layoutY="285.0" maxWidth="341.0" minWidth="286.0" prefHeight="139.0" prefWidth="286.0" />
+      <Pane layoutY="-2.0" prefHeight="66.0" prefWidth="628.0" style="-fx-background-color: #0B4C5F;">
+         <children>
+            <ImageView fitHeight="61.0" fitWidth="73.0" layoutX="98.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../a.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="190.0" layoutY="6.0" prefHeight="54.0" prefWidth="305.0" text="LOKET SWIM" textFill="#87b2ff">
+               <font>
+                  <Font name="Chlorinar" size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="444.0" layoutY="64.0" prefHeight="41.0" prefWidth="122.0" style="-fx-background-color: black;" />
+      <JFXComboBox fx:id="us" layoutX="106.0" layoutY="202.0" prefHeight="25.0" prefWidth="138.0" />
+      <JFXButton fx:id="or" layoutX="328.0" layoutY="250.0" onAction="#orderan" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: #87b2ff;" text="ORDER" />
+      <Label layoutX="40.0" layoutY="88.0" prefHeight="21.0" prefWidth="51.0" text="Nama">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="nam" focusColor="#141414" layoutX="100.0" layoutY="84.0" />
+      <Label layoutX="40.0" layoutY="145.0" text="Date">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="368.0" layoutY="133.0" text="Harga total">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="327.0" text="Banyak Orang">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="tal" layoutX="365.0" layoutY="171.0" />
+      <DatePicker fx:id="dat" layoutX="101.0" layoutY="143.0" prefHeight="25.0" prefWidth="149.0" />
+      <JFXRadioButton fx:id="k5" layoutX="74.0" layoutY="355.0" onAction="#kk5" text="&lt; 5">
+         <toggleGroup>
+            <ToggleGroup fx:id="pilihorang" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="pas5" layoutX="74.0" layoutY="386.0" onAction="#pass5" text="5" toggleGroup="$pilihorang" />
+      <JFXRadioButton fx:id="l5" layoutX="74.0" layoutY="416.0" onAction="#ll5" text="&gt;5" toggleGroup="$pilihorang" />
+      <JFXButton fx:id="hap" layoutX="424.0" layoutY="250.0" onAction="#hapus" style="-fx-background-color: #87b2ff;" text="ORDER AGAIN" />
+      <JFXButton fx:id="log" layoutX="551.0" layoutY="250.0" onAction="#out" style="-fx-background-color: #87b2ff;" text="NOTA" />
+   </children>
+</AnchorPane>

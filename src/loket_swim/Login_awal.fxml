@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="517.0" prefWidth="568.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loket_swim.FXMLDocumentController">
+    <children>
+      <ImageView fitHeight="489.0" fitWidth="568.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../back.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="40.0" layoutY="120.0" prefHeight="95.0" prefWidth="490.0" style="-fx-background-color: #0B4C5F;">
+         <children>
+            <Label layoutX="145.0" layoutY="8.0" prefHeight="73.0" prefWidth="253.0" text="MEMBER LOGIN SWIM" textAlignment="CENTER" textFill="#f8f5f5">
+               <font>
+                  <Font name="Chlorinar" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="73.0" fitWidth="112.0" layoutX="47.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../sports.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="40.0" layoutY="215.0" prefHeight="248.0" prefWidth="490.0" style="-fx-background-color: #0B2F3A;">
+         <children>
+            <Label layoutX="177.0" layoutY="29.0" prefHeight="17.0" prefWidth="110.0" text="User Name" textAlignment="CENTER" textFill="#f5f0f0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="us" focusColor="#0f1b2f" layoutX="171.0" layoutY="63.0" style="-fx-background-color: #87b2ff;" unFocusColor="#2c3f61" />
+            <Label layoutX="177.0" layoutY="114.0" prefHeight="17.0" prefWidth="73.0" text="Password" textAlignment="CENTER" textFill="#f8f6f6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="pass" layoutX="171.0" layoutY="147.0" style="-fx-background-color: #87b2ff;" unFocusColor="#1e1d1d" />
+            <JFXButton fx:id="log" layoutX="278.0" layoutY="185.0" onAction="#loginan" prefHeight="42.0" prefWidth="73.0" text="LOGIN" textFill="WHITE">
+               <font>
+                  <Font name="Stencil" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>
