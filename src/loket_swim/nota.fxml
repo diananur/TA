@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="loket_swim.NotaController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loket_swim.NotaController">
    <children>
       <Pane prefHeight="64.0" prefWidth="600.0" style="-fx-background-color: #0B4C5F;">
          <children>
@@ -28,7 +27,7 @@
       </Pane>
       <Pane layoutY="365.0" prefHeight="35.0" prefWidth="600.0" style="-fx-background-color: #0B4C5F;">
          <children>
-            <JFXButton fx:id="log2" layoutX="421.0" layoutY="-1.0" onAction="#keluar2" prefHeight="31.0" prefWidth="143.0" style="-fx-background-color: #87b2ff;" text="CENCEL">
+            <JFXButton fx:id="log2" layoutX="421.0" layoutY="-1.0" onAction="#keluar2" prefHeight="31.0" prefWidth="143.0" style="-fx-background-color: #87b2ff;" text="CANCEL">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
@@ -60,11 +59,11 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <JFXTextField fx:id="na" layoutX="236.0" layoutY="85.0" />
-      <JFXTextField fx:id="da" layoutX="236.0" layoutY="120.0" />
-      <JFXTextField fx:id="usi" layoutX="236.0" layoutY="156.0" />
-      <JFXTextField fx:id="pa" layoutX="197.0" layoutY="195.0" maxWidth="218.0" minWidth="149.0" prefHeight="31.0" prefWidth="188.0" />
-      <JFXTextField fx:id="ha" layoutX="236.0" layoutY="270.0" />
+      <JFXTextField fx:id="na" editable="false" layoutX="236.0" layoutY="85.0" />
+      <JFXTextField fx:id="da" editable="false" layoutX="236.0" layoutY="120.0" />
+      <JFXTextField fx:id="usi" editable="false" layoutX="236.0" layoutY="156.0" />
+      <JFXTextField fx:id="pa" editable="false" layoutX="197.0" layoutY="195.0" maxWidth="218.0" minWidth="149.0" prefHeight="31.0" prefWidth="188.0" />
+      <JFXTextField fx:id="ha" editable="false" layoutX="236.0" layoutY="270.0" />
       <JFXButton fx:id="log" layoutX="420.0" layoutY="321.0" onAction="#keluar" prefHeight="25.0" prefWidth="143.0" style="-fx-background-color: #87b2ff;" text="LOGOUT">
          <font>
             <Font name="System Bold" size="15.0" />

@@ -125,7 +125,7 @@ public class InputanController implements Initializable {
            
         }else{
         
-        JOptionPane.showMessageDialog(null, "Harap pilih waktu pemesanan Anda");
+        JOptionPane.showMessageDialog(null, "Harap pilih banyak orang Anda");
         }
     
         AKHIR.setText("Nama            : "+nm+"\nDate              : "+tgl+"\nUsia               : "+usia+"\nPaket SWIM  :"
@@ -211,43 +211,6 @@ public class InputanController implements Initializable {
 
     @FXML
     private void out(ActionEvent event) throws ClassNotFoundException {
-       /* String nm1=nam.getText();
-        String tgl1 = dat.getValue().toString();
-        String usia1 =us.getValue().toString();
-        String pkt1 = pak.getValue().toString();
-        String hrg1 = tal.getText();
-        String sql = "INSERT INTO `input`(`nama`, `date`, `usia`, `paket`, `harga`) VALUES (?,?,?,?,?)";
-        try{   
-         Class.forName(C_DRIVER);
-         conn = DriverManager.getConnection(DB_URL, USER, PASS);
-         stm = conn.prepareStatement(sql);
-         stm.setString(1,nm1);
-         stm.setString(2,tgl1);
-         stm.setString(3,usia1);
-         stm.setString(4,pkt1);
-         stm.setString(5,hrg1);
-         ResultSet rs = stm.executeQuery();
-         if(rs.next()){
-             try{
-                 ((Node) (event.getSource())).getScene().getWindow().hide();
-                 
-                 FXMLLoader fxmlLoader = new FXMLLoader();
-                 fxmlLoader.setLocation(getClass().getResource("Login_awal.fxml"));
-                 Scene scene = new Scene(fxmlLoader.load());
-                 
-                 Stage stage = new Stage();
-                 stage.setScene(scene);
-                 stage.show();
-             }catch (IOException e){
-                 System.out.println("Failed to create nuw window" +e);
-             }
-         }
-         
-     }catch (SQLException s){ 
-    }
-         
-        
-        */
         
         try{
                  ((Node) (event.getSource())).getScene().getWindow().hide();
